@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="card">
+    <div class="search">
+      <input type="text" class="search-bar" placeholder="Search">
+      <button aria-label="Search"><img src="search.png" width="25px" height="25px" alt="Search"></button>
+    </div>
+    <div class="weather">
+      <h2 class="city">Weather in Jodhpur</h2>
+      <h1 class="temp">22.12°C</h1>
+      <div class="flex">
+        <div class="description">Few Clouds</div>
+        <img src="https://openweathermap.org/img/wn/02d.png" width="30px" height="30px" alt="Weather Icon" class="icon"/>
+      </div>
+      <div class="humidity">Humidity: 24%</div>
+      <div class="wind">Wind speed: 0.89 km/hr</div>
+      <div class="extra-info">
+        <div class="feels-like">Feels like: 21°C</div>
+        <div class="pressure">Pressure: 1015 hPa</div>
+        <div class="sunrise">Sunrise: 6:00 AM</div>
+        <div class="sunset">Sunset: 7:30 PM</div>
+      </div>
+    </div>
+    <div class="error hidden">City not found. Please try again.</div>
+  </div>
+</body>
+</html>

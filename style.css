@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Slabo+27px&display=swap');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Slabo 27px', serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+.card {
+  background: #000000d0;
+  color: white;
+  padding: 2em;
+  margin: 1em;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 2.5em;
+  width: 2.5em;
+  outline: none;
+  color: white;
+  background: #7c7c7c;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 44px;
+  color: white;
+  background-color: #7c7c7c4b;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(80% - 100px);
+}
+
+button:hover {
+  background: #7c7c7c0b;
+}
+
+input.search-bar:hover {
+  background: #7c7c7c7b;
+}
+
+.description {
+  text-transform: capitalize;
+  margin-right: 10px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.humidity, .wind, .feels-like, .pressure, .sunrise, .sunset {
+  margin-bottom: 5px;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
